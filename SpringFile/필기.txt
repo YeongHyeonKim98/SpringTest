@@ -1,0 +1,109 @@
+새 프로젝트
+- "SpringFile" > "com.test.file"
+
+1. pom.xml
+	- 자바 11
+	- 스프링 5.0.7
+
+2. web.xml
+	- 필터 추가
+
+3. pom.xml
+	- 의존성
+	- MyBatis
+	- Spring Fileupload
+
+4. 설정
+	- MyBatis	
+	- Spring Fileupload
+
+5. 파일 생성
+	- com.test.file > "BoardController.java"
+					> "BoardDAO.java(I)"
+					> "BoardDAOImpl.java"
+					> "BoardDTO.java"
+					> "FileDTO.java"
+	- views > "list.jsp"
+		    > "add.jsp"
+		   	> "view.jsp"					
+	- webapp > resources > "files" 폴더 생성
+	- "db.sql"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

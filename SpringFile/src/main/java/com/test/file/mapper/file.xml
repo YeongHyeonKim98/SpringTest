@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="file">
+
+	<insert id="add" parameterType="bdto">
+	
+		insert into tblSpringBoard (seq, subject, content, regdate)
+			values (seqSpringBoard.nextVal, #{subject}, #{content}, default)
+	
+	</insert>
+	
+	<insert id="addFile" parameterType="fdto">
+	
+		insert into tblSpringFile (seq, filename, filesize, mimetype, bseq)
+			values (seqSpringFile.nextVal, #{filename}, #{filesize}, #{mimetype}, (select max(seq) from tblSpringBoard))
+	
+	</insert>
+	
+	<select id="list" resultType="bdto">
+		select * from tblSpringBoard order by seq desc
+	</select>
+	
+	<select id="flist" parameterType="String" resultType="fdto">
+		select * from tblSpringFile where bseq = #{seq} order by filename asc
+	</select>
+	
+	<select id="get" parameterType="String" resultType="bdto">
+		select * from tblSpringBoard where seq = #{seq}
+	</select>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
